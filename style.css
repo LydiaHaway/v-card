@@ -32,6 +32,24 @@ main {
   font-size: xx-large;
 }
 
+.menu i:hover {
+  color: lightskyblue;
+  animation-name: rotade;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotade {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .info img {
   border: 5px solid lightslategray;
   border-radius: 50%;
@@ -89,7 +107,7 @@ main {
   background-color: rgba(33, 145, 182, 0);
   border: 3px solid rgb(33, 145, 182);
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .info a:hover {
@@ -110,6 +128,22 @@ main {
   padding: 5px;
 }
 
-i:hover {
+.contact i:hover {
   color: lightskyblue;
+  font-size: larger;
+}
+
+@media screen and (max-width: 820px) {
+  .info hr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info {
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    text-align: center;
+  }
 }
