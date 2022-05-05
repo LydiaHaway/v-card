@@ -19,8 +19,8 @@ main {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   padding: 50px;
   box-shadow: -1px -1px 18px 5px rgb(33 145 182);
 }
@@ -161,6 +161,11 @@ main {
 }
 
 @media screen and (max-width: 960px) {
+  main {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .info hr {
     margin-left: auto;
     margin-right: auto;
