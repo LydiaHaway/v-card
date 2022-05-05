@@ -15,7 +15,7 @@ main {
   background: url(./bg.jpeg) center/cover no-repeat;
   background-attachment: fixed;
   border: 5px solid rgb(33, 145, 182);
-  border-radius: 15%;
+  border-radius: 10px;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -41,21 +41,39 @@ main {
   margin-left: 5%;
 }
 
-.menu i:hover {
+.left i:hover {
   color: lightskyblue;
-  animation-name: rotade;
+  animation-name: rotadeLeft;
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes rotade {
+.right i:hover {
+  color: lightskyblue;
+  animation-name: rotadeRight;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotadeLeft {
   from {
     transform: rotate(0deg);
   }
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rotadeRight {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
   }
 }
 
@@ -131,6 +149,7 @@ main {
   text-transform: uppercase;
   background-color: rgba(33, 145, 182, 0);
   border: 3px solid rgb(33, 145, 182);
+  border-radius: 5px;
   color: rgb(33, 145, 182);
   padding: 10px;
 }
