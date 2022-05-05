@@ -21,6 +21,7 @@ main {
   margin-left: 50px;
   margin-right: 50px;
   padding: 50px;
+  box-shadow: -1px -1px 18px 5px rgb(33 145 182);
 }
 
 .menu {
@@ -53,7 +54,7 @@ main {
 .info img {
   border: 5px solid lightslategray;
   border-radius: 50%;
-  max-width: 300px;
+  max-width: 250px;
   margin-right: 50px;
   margin-left: 50px;
 }
@@ -65,6 +66,7 @@ main {
   align-items: center;
   margin-top: 100px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .info hr {
@@ -101,17 +103,32 @@ main {
   margin-bottom: 50px;
 }
 
-.info a {
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: 350px;
+}
+
+.portofolio,
+.resume {
+  margin: 20px;
+  text-align: center;
+}
+
+.links a {
   text-decoration: none;
   text-transform: uppercase;
   background-color: rgba(33, 145, 182, 0);
   border: 3px solid rgb(33, 145, 182);
   padding: 10px;
-  margin: 10px;
 }
 
-.info a:hover {
+.links a:hover {
   background-color: rgb(33, 145, 182);
+  padding: 15px;
 }
 
 .email,
@@ -133,7 +150,7 @@ main {
   font-size: larger;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 960px) {
   .info hr {
     margin-left: auto;
     margin-right: auto;
@@ -145,5 +162,10 @@ main {
 
   .contact {
     text-align: center;
+  }
+
+  .links {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
