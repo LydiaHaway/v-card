@@ -28,10 +28,17 @@ main {
 .menu {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  margin-right: 5%;
   font-size: xx-large;
+}
+
+.right {
+  margin-right: 5%;
+}
+
+.left {
+  margin-left: 5%;
 }
 
 .menu i:hover {
