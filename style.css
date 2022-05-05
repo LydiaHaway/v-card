@@ -13,6 +13,7 @@ body {
 
 main {
   background: url(./bg.jpeg) center/cover no-repeat;
+  background-attachment: fixed;
   border: 5px solid rgb(33, 145, 182);
   border-radius: 15%;
   margin: auto;
