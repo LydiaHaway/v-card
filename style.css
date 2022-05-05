@@ -152,6 +152,7 @@ main {
   border-radius: 5px;
   color: rgb(33, 145, 182);
   padding: 10px;
+  transition: 0.5s;
 }
 
 .links a:hover {
